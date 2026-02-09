@@ -1,4 +1,4 @@
 @echo off
 echo Démarrage de l'API Token...
-node authV1.js
+node authv1.js
 pause
