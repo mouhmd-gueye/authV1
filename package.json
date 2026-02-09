@@ -2,7 +2,7 @@
   "name": "token-api",
   "version": "1.0.0",
   "description": "",
-  "main": "authV1.js",
+  "main": "authv1.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node authV1.js"
