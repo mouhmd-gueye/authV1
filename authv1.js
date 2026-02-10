@@ -10,6 +10,11 @@ app.use(express.json());
 app.use(cors());
 
 const users = JSON.parse(fs.readFileSync('./users.json'));
+// test de la disponibilité de l'API
+app.get('/', (req, res) => {
+    res.send('✅ API Diotali en ligne');
+});
+
 
 // 🔥 LOGIN + TOKEN DIOTALI EN UNE SEULE API
 app.post('/login', async (req, res) => {
@@ -58,3 +63,4 @@ const PORT = process.env.PORT || 3000
 app.listen(PORT, '0.0.0.0', () => {
     console.log(`API démarrée sur le port ${PORT}`);
 });
+
